@@ -3,7 +3,6 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class Week1Test {
-
 	@Test
 	public void testCountDigits() {
 		//Really ugly way of setting up the int arrays
@@ -26,6 +25,13 @@ public class Week1Test {
 		assertArrayEquals(Week1.countDigits(test1), arr1);
 		assertArrayEquals(Week1.countDigits(test2), arr2);
 		assertArrayEquals(Week1.countDigits(test3), arr3);
+	}
+	
+	@Test
+	public void testSum() {
+		assertEquals(Week1.digitSum(0), 0);
+		assertEquals(Week1.digitSum(9991), 28);
+		assertEquals(Week1.digitSum(161085), 21);
 	}
 
 }
