@@ -30,4 +30,32 @@ public class SuperInt {
 		String str = this.norm + " with a sum of " + this.sum + "and a variance ranking of " + this.variance;
 		return str;
 	}
+	
+	public int compareNorm(SuperInt a) {
+		if(this.norm > a.getNorm()) {
+			return 1;
+		} else if(this.norm == a.getNorm()){ 
+			return 0; 
+		} else {
+			return -1;
+		}
+	}
+	public int compareSum(SuperInt a) {
+		if(this.sum > a.getSum()) {
+			return 1;
+		} else if(this.sum == a.getSum()){ 
+			return 0; 
+		} else {
+			return -1;
+		}
+	}
+	public int compareVar(SuperInt a) {
+		if(this.variance > a.getVar()) {
+			return 1;
+		} else if(this.variance == a.getVar()){ 
+			return 0; 
+		} else {
+			return -1;
+		}
+	}
 }
